@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- bs -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="300"
+    >
+      <div class="d-flex justify-content-center bg-header w-100">
+        <img class="logo-tamaño" src="./assets/logo.jpeg" alt="" />
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">CONTACT US</a>
+              </li>
+              <li class="margin-li moving-truck">
+                <img src="./assets/container-icon.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="500"
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="w-100 img-carrousel"
+              src="./assets/106955605_l-1024x706-transformed.jpeg"
+              alt="Descripción de la imagen"
+            />
+            <div class="text-overlay w-100">
+              <h3 class="text-white fw-bold text-center">SEGUROS MARÍTIMOS</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="w-100 img-carrousel"
+              src="./assets/Empresas-de-transporte-internacional-Colombia.jpg"
+              alt="Descripción de la imagen"
+            />
+            <div class="text-overlay w-100">
+              <h3 class="text-white fw-bold text-center">SEGUROS AÉREOS</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="w-100 img-carrousel"
+              src="./assets/camion.jpg"
+              alt="Descripción de la imagen"
+            />
+            <div class="text-overlay w-100">
+              <h3 class="text-white fw-bold text-center">SEGUROS TERRESTRES</h3>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="d-flex flex-column justify-content-center mx-4 mt-5">
+        <h1
+          class="text-center fw-bold"
+          data-aos="fade-right"
+          data-aos-offset="400"
+          data-aos-easing="ease-in-sine"
+        >
+          Bienvenido a TotalCover Tu Socio en la Seguridad de Envíos
+        </h1>
+        <p
+          class="text-center mt-3 mx-5 p-subtitle"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="500"
+        >
+          Excelentes precios. Coberturas claras. Sin complicaciones
+        </p>
+        <div
+          class="d-flex justify-content-center mt-2"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+        <a href="https://w.app/totalcover" class="btn-main" target="_blank">Cotizar en 1 minuto</a>
+
+        </div>
+      </div>
+      <section id="about">
+        <div>
+          <h1
+            class="text-center fw-bold mt-5"
+            data-aos="fade-right"
+            data-aos-offset="400"
+            data-aos-easing="ease-in-sine"
+          >
+            Sobre nosotros
+          </h1>
+
+<!-- <-------> 
+
+<div id="carouselExample" class="carousel slide carousel2" data-bs-ride="carousel"
+data-aos="flip-left"
+data-aos-easing="ease-out-cubic"
+data-aos-duration="2000">
+  <div class="carousel-inner">
+    <div class="carousel-item py-4 active about-items">
+      <div class="d-flex justify-content-center mx-5   gap-3 mt-5 nosotros-container">
+        <div class=" div-carousel">
+          <h4 class="subtitle" data-aos="zoom-in-right">
+            PROTECCIÓN Y TRANQUILIDAD
+          </h4>
+          <p data-aos="zoom-in-right" class="nosotros-p">
+            El Grupo T-cover cuenta con más de una década de experiencia en
+            el área de comercio exterior, brindando a nuestros clientes una
+            amplia gama de servicios, incluyendo seguros de carga internacional,
+            seguros de contenedores, almacenamiento particular y otros servicios especializados.
+          </p>
+        </div>
+        <img data-aos="zoom-in-left" class="img-nosotros" src="./assets/barco-carga.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="carousel-item py-4 about-items">
+      <div class="d-flex justify-content-center mx-5  gap-3 mt-5 nosotros-container">
+        <div class=" div-carousel"> 
+          <h4 class="subtitle" data-aos="zoom-in-right">
+            NUESTRA HISTORIA
+          </h4>
+          <p data-aos="zoom-in-right" class="nosotros-p">
+            Desde nuestros inicios hace más de 10 años, hemos cultivado un legado de confianza y profesionalismo. Nos apasiona ayudar a las personas a tomar decisiones informadas sobre seguros, garantizando que estén debidamente protegidas en cada etapa. La dedicación constante a la innovación y la adaptación a las cambiantes necesidades del mercado nos ha permitido destacarnos como líderes en la industria.
+
+          </p>
+        </div>
+        <img data-aos="zoom-in-left" class="img-nosotros" src="./assets/img-1.jpg" alt="">
+      </div>
+    </div>
+    <div class="carousel-item py-4 about-items">
+      <div class="d-flex justify-content-center mx-5    gap-3 mt-5 nosotros-container">
+        <div class="div-carousel ">
+          <h4 class="subtitle" data-aos="zoom-in-right">
+            COMPROMISO CON LA EXCELENCIA
+          </h4>
+          <p data-aos="zoom-in-right" class="nosotros-p">
+            En T-Cover, entendemos que cada cliente es único, al igual que sus necesidades y objetivos financieros. Nuestro equipo altamente calificado está comprometido a ofrecer soluciones personalizadas y servicios de asesoramiento experto. Nos esforzamos por superar las expectativas, brindando tranquilidad y seguridad a quienes confían en nosotros.
+          </p>
+        </div>
+        <img data-aos="zoom-in-left" class="img-nosotros" src="./assets/img-2.jpg" alt="">
+      </div>
+    </div>
+    <div class="carousel-item py-4 about-items">
+      <div class="d-flex justify-content-center mx-5   gap-3 mt-5 nosotros-container">
+        <div class=" div-carousel">
+          <h4 class="subtitle" data-aos="zoom-in-right">
+            ¿POR QUÉ ELEGIRNOS?
+          </h4>
+          <ul data-aos="zoom-in-right" class="nosotros-p gap-3">
+           <li>  Experiencia Comprobada: Más de una década en la industria respaldan nuestro conocimiento y habilidades.</li>
+           <li>Enfoque Personalizado: Cada cliente recibe atención individualizada, adaptada a sus necesidades específicas.</li>
+           <li>    Integridad y Transparencia: Operamos con los más altos estándares éticos, priorizando la honestidad y la transparencia en cada interacción.</li>
+           
+          </li>
+        </div>
+        <img data-aos="zoom-in-left" class="img-nosotros" src="./assets/img-3.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon text-dark " aria-hidden="true"></span>
+    <span class="visually-hidden text-dark">Anterior</span>
+  </button>
+  <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
+    <span class="visually-hidden text-dark">Siguiente</span>
+  </button>
+</div>
+
+<!-- <----- -->
+
+
+        
+      </section>
+      <section id="services">
+        <h1
+          class="text-center"
+          data-aos="fade-right"
+          data-aos-offset="400"
+          data-aos-easing="ease-in-sine"
+        >
+          NUESTROS SERVICIOS
+        </h1>
+        <div class="container">
+          <div
+            class="row my-5 justify-content-center align-items-center servicios gap-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="col-lg-3 d-flex justify-content-center">
+              <div class="card text-center">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
+                    src="./assets/icons/envase.png"
+                    class="card-img-top mx-auto icons"
+                    alt="..."
+                  />
+                  <p class="card-text mt-5">
+                    Pólizas para garantías de contenedores
+                  </p>
+                  <a href="https://w.app/tcover" target="blank" class="btn-main btn">MÁS INFO</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 d-flex justify-content-center">
+              <div class="card text-center">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
+                    src="./assets/icons/transporte.png"
+                    class="card-img-top mx-auto icons"
+                    alt="..."
+                  />
+                  <p class="card-text mt-5">
+                    Pólizas de carga y almacén particular
+                  </p>
+                  <a href="https://w.app/totalcover" target="blank" class="btn-main btn">MÁS INFO</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 d-flex justify-content-center">
+              <div class="card text-center">
+                <div
+                  class="card-body d-flex flex-column justify-content-between align-items-center"
+                >
+                  <img
+                    src="./assets/icons/consulta.png"
+                    class="card-img-top mx-auto icons"
+                    alt="..."
+                  />
+                  <p class="card-text mt-5">Recaudaciones y asesorías.</p>
+                  <a href="https://w.app/tcover" target="blank" class="btn-main btn">MÁS INFO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h1
+        class="text-center"
+        data-aos="fade-right"
+        data-aos-offset="400"
+        data-aos-easing="ease-in-sine"
+      >
+        TE ACOMPAÑAREMOS Y ASESORAREMOS DURANTE TODO EL PROCESO
+      </h1>
+      <section id="contacto" class="mt-5">
+        <h1
+          class="text-center fw-bold"
+          data-aos="fade-right"
+          data-aos-offset="400"
+          data-aos-easing="ease-in-sine"
+        >
+          Contacto
+        </h1>
+        <div
+          class="d-flex gap-5 justify-content-center align-items-center mt-5 flex-wrap"
+        >
+          <div
+            class="d-flex flex-column gap-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="icon-contact"
+                src="./assets/contacto/whatsapp.png"
+                alt=""
+              />
+              <a class="text-decoration-none text-dark" href="https://w.app/tcover" target="blank"><span class="ms-3">+56 9 12345678</span></a>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="icon-contact"
+                src="./assets/contacto/email.png"
+                alt=""
+              />
+              <a class="text-decoration-none text-dark" href="mailto:ventas@totalcover.cl"><span class="ms-3">ventas@totalcover.cl</span></a>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="icon-contact"
+                src="./assets/contacto/pin-de-ubicacion.png"
+                alt=""
+              />
+              <span class="ms-3">Calle Prat #814 Of. 503, Valparaíso</span>
+            </div>
+          </div>
+          <iframe
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            class="shadow mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.17912780217154!2d-71.6276957401858!3d-33.040425715705325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e12c3d73a417%3A0x94ed5adcdef1e56f!2sPrat%20814%2C%20Valpara%C3%ADso%2C%20Chile!5e0!3m2!1ses!2sar!4v1702494490658!5m2!1ses!2sar"
+            width="480"
+            height="330"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center mt-5">© 2023. Created by <a class="text-dark" href="https://www.instagram.com/devgatto/" target="blank">DevGatto</a></footer>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
